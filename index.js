@@ -1,3 +1,11 @@
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function() {
+        console.log('Copied to clipboard successfully!', text);
+    }, function(err) {
+        console.error('Could not copy text: ', err);
+    });
+}
+
 function onDOMContentLoaded() {
     var map = L.map('map_1').setView([33.424511, -111.931007], 16);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

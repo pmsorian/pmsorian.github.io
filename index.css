@@ -9,3 +9,29 @@
 #parking-locations {
     scroll-margin-top: 100px;
 }
+
+.copy-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+.copy-button:hover {
+    background-color: #f0f0f0;
+}
+.copy-button:hover .copy-address-tooltip {
+    display: inline-block;
+}
+.copy-address-tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+}
